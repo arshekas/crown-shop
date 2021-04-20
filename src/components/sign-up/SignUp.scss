@@ -1,0 +1,13 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    .title {
+        margin: 10px 0;
+    }
+    span {
+        margin-top: 0.5rem;
+        font-weight: 600;
+        color: gray;
+    }
+}
