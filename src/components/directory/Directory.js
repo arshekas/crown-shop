@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import MenuItem from '../menu-tem/MenuItem'
 import './Directory.scss'
 
-export class Directory extends Component {
+class Directory extends Component {
     constructor(props) {
         super(props)
     
