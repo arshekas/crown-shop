@@ -29,6 +29,7 @@ const googleSignInStyles = css`
     background-color: #357ae8;
     border: none;
   }
+  
 `;
 
 const getButtonStyles = props => {
@@ -54,4 +55,8 @@ export const CustomButtonContainer = styled.button`
   display: flex;
   justify-content: center;
   ${getButtonStyles}
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    padding: 0 25px;
+  }
 `;

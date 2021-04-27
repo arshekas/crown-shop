@@ -8,15 +8,22 @@
     cursor: pointer;
   
     .shopping-icon {
-      width: 24px;
-      height: 24px;
+      width: 34px;
+      height: 34px;
+      @media screen and (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+      }
     }
-  
     .item-count {
       position: absolute;
       font-size: 15px;
       font-weight: bold;
       bottom: 8px;
+      @media screen and (max-width: 800px) {
+        font-size: 13px;
+        bottom: 11px;
+      }
     }
   }
   

@@ -6,9 +6,16 @@
     padding: 15px 0;
     font-size: 20px;
     align-items: center;
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
+    }
   
     .image-container {
       width: 23%;
+      @media screen and (max-width: 800px) {
+        width: 22%;
+      }
+      
       padding-right: 15px;
   
       img {
@@ -20,6 +27,10 @@
     .quantity,
     .price {
       width: 23%;
+      margin: auto;
+      @media screen and (max-width: 800px) {
+        width: 22%;
+      }
     }
   
     .quantity {
@@ -36,6 +47,9 @@
     .remove-button {
       padding-left: 12px;
       cursor: pointer;
+      @media screen and (max-width: 800px) {
+        width: 10%;
+      }
     }
   }
   

@@ -1,5 +1,5 @@
 import './CartIcon.scss'
-import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
+import  ShoppingIcon  from '../../assets/shopping-bag.png';
 import React from 'react'
 import { toggleCartHidden } from '../../redux/cart/cart-action';
 import { connect } from 'react-redux';
@@ -9,7 +9,7 @@ import { createStructuredSelector } from 'reselect';
 function CartIcon({toggleCartHidden, itemCount}) {
     return (
         <div className="cart-icon" onClick={toggleCartHidden}>
-            <ShoppingIcon />
+            <img  className="shopping-icon" src={ShoppingIcon} alt="shopping bag"/>
             <span className="item-count">{itemCount}</span>
         </div>
     )

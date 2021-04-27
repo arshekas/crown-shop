@@ -10,7 +10,7 @@ function StripeButton({price}) {
     return (
         <StripeCheckout
             label='Pay Now'
-            name="Crown Shop ltd."
+            name="Crown Closet ltd."
             billingAddress
             shippingAddress
             image="https://svgshare.com/i/CUz.svg"
