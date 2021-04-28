@@ -6,7 +6,7 @@ import CartDropDown from '../cartDropDown/CartDropDown'
 import { createStructuredSelector } from 'reselect'
 import { selectCurrentUser } from '../../redux/user/user-selectors'
 import { selectCartHidden } from '../../redux/cart/cart-selectors'
-import { HeaderContainer, LogoContainer, OptionLink, OptionsContainer } from './Headerstyles'
+import { HeaderContainer, LogoContainer, LogoName, OptionLink, OptionsContainer } from './Headerstyles'
 import { signOutStart } from '../../redux/user/user-action'
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
@@ -14,11 +14,12 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <LogoContainer to='/'>
         <Logo className='logo' />
       </LogoContainer>
+      <LogoName to='/'>Crown Closet</LogoName>
       <OptionsContainer>
         <OptionLink to='/shop'>
           SHOP
         </OptionLink>
-        <OptionLink to='/shop'>
+        <OptionLink to='/contact'>
           CONTACT
         </OptionLink>
         {currentUser ? (

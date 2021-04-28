@@ -9,7 +9,7 @@ function Collection({ collection }) {
 
     return (
         <div className="collection-page">
-            <h1 className="title">{title.toUpperCase()}</h1>
+            <h2 className="title">{title.toUpperCase()}</h2>
             <div className="items">
                 {
                     items.map(item => (

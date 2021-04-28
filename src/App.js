@@ -10,7 +10,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user-selectors';
 import Checkout from './pages/checkout/Checkout';
 import { checkUserSession } from './redux/user/user-action';
-
+import Contact from './components/contact/Contact'
 export const App = ({checkUserSession, currentUser}) => {
     // unSubcribeFromAuth = null;
 
@@ -47,6 +47,7 @@ export const App = ({checkUserSession, currentUser}) => {
       <Switch>
         <Route exact path='/' component={Homepage} />
         <Route path='/shop' component={ShopPage} />
+        <Route path='/contact' component={Contact} />
         <Route path='/checkout' component={Checkout} />
         <Route exact path='/signin' render={()=> currentUser ? (<Redirect to='/' />) : (<SignInOut />)} />
       </Switch>    

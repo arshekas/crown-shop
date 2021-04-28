@@ -9,6 +9,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  align-items: center;
   @media screen and (max-width: 800px) {
     height: 60px;
     padding: 10px;
@@ -19,23 +20,40 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 100%;
-  width: 70px;
-  padding: 25px;
+  width: 35%;
+  display: flex;
+  align-items: center;
   @media screen and (max-width: 800px) {
-    width: 50px;
+    width: 20%;
     padding: 0;
-    margin-left:10px
   }
+  @media screen and (max-width: 900px) {
+    width: 10%;
+  }
+`;
+export const LogoName = styled(Link)`
+  font-family: 'Lobster';
+  font-size: 2.5rem;
+  width: 30%;
+  text-align: center;
+  margin-left: 0.5rem;
+  @media screen and (max-width: 800px) {
+    display: none;
+}
 `;
 
 export const OptionsContainer = styled.div`
-  width: 50%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
+  
   justify-content: flex-end;
   @media screen and (max-width: 800px) {
-    width: 80%;
+      width: 80%;
+  }
+  @media screen and (max-width: 900px) {
+    width: 70%;
   }
 `;
 
