@@ -1,5 +1,6 @@
 import React from 'react'
 import StripeCheckout from 'react-stripe-checkout'
+import logo from './crown.svg'
 
 function StripeButton({price}) {
     const priceForStripe = price * 100;
@@ -13,7 +14,7 @@ function StripeButton({price}) {
             name="Crown Closet ltd."
             billingAddress
             shippingAddress
-            image="https://svgshare.com/i/CUz.svg"
+            image={logo}
             description={`Your total is $${price}`}
             amount={priceForStripe}
             panelLabel="Pay Now"
